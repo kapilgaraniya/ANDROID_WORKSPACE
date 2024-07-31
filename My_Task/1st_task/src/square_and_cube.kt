@@ -6,6 +6,6 @@ fun main()
 
     print("The square is : ")
     println(num*num)
-    print("\nThe square is : ")
+    print("\nThe cube is : ")
     println(num * num * num)
 }
