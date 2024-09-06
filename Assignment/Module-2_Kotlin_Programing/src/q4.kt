@@ -9,10 +9,11 @@ fun main()
 
     val ans = n1 * n2
     println("The Multiplication is : $ans\n")
+//------------------------------------------------
 
     print("Enter a character: ")
     val ch = readLine()!!.single()
 
     val asciiValue = ch.code
-    println("The ASCII value of $ch is $asciiValue") //ASCII{A - Z = 65 - 90},{a - z = 97 - 122}
+    println("The ASCII value of $ch is $asciiValue") 
 }
