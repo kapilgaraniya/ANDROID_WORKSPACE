@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".honey">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/d"
+        android:text="Amul Honey, 250 g | Pack of 3. Known as a best power packed health food, Honey is Natures gift to us to relish. It is among the most popular sweeteners with enormous health benefits . The health benefits and multi-purpose usage makes this natures nectar a must have kitchen item."
+        >
+    </TextView>
+
+</RelativeLayout>

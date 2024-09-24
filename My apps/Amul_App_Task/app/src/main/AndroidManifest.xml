@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/amul_logo_image"
+        android:label="Amul Products"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Amul_App_Task"
+        tools:targetApi="31">
+        <activity
+            android:name=".ladoo"
+            android:exported="false" />
+        <activity
+            android:name=".peda"
+            android:exported="false" />
+        <activity
+            android:name=".amul_sc"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".milk"
+            android:exported="false" />
+        <activity
+            android:name=".lassi"
+            android:exported="false" />
+        <activity
+            android:name=".honey"
+            android:exported="false" />
+        <activity
+            android:name=".butter"
+            android:exported="false" />
+        <activity
+            android:name=".potato"
+            android:exported="false" />
+        <activity
+            android:name=".Ghee"
+            android:exported="false" />
+        <activity
+            android:name=".chocolate"
+            android:exported="false" />
+        <activity
+            android:name=".Atta"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

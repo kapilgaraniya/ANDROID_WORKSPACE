@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pizza">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n               * Ingredients *\n
+\n      * Start with a crust. ...
+\n      * Add a sauce. ...
+\n      * Add some veggies, such as: ...
+\n      * Try some fruit on your pizza, such as: ...
+\n      * Add some protein, such as: ...
+\n      * Add cheese. ...
+\n      * Bake your creation in a hot oven (450 F or above)."
+        >
+
+    </TextView>
+
+</RelativeLayout>

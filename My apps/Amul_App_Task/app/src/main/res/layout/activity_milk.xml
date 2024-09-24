@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".milk">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/amulmilk"
+        android:text="Amul milk is made of milk itself . Some might have a “Cow milk” label on the pack whereas other variants are mixed milk (Cow and buffalo milk). The unnatural thickness you're talking about comes from a process called homogenization, and it's mostly prevalent in Amul's Tetrapak milk."
+        >
+
+    </TextView>
+
+</RelativeLayout>

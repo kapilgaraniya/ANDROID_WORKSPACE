@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ghee">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/c"
+        android:text="One of the simplest methods you can use to find the impurity of ghee is by heating a teaspoon of ghee in a vessel. If ghee melts immediately and turns dark brownish in color, then it is pure ghee . If it takes time to melt and turns into light yellow in color, then it is adulterated."
+        >
+    </TextView>
+
+</RelativeLayout>

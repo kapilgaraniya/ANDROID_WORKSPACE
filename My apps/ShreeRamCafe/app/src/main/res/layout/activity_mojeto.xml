@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mojeto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n               * Ingredients *\n
+\n        * juice of 1 lime.
+\n        * 1 tsp granulated sugar.
+\n        * small handful mint leaves, plus extra sprig to serve.
+\n        * 60ml white rum.
+\n        * soda water, to taste."
+        >
+    </TextView>
+
+</RelativeLayout>

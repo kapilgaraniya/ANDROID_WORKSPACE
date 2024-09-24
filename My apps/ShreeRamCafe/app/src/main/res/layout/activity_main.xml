@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFD600"
+    >
+
+    <TextView
+        android:id="@+id/cafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Welcome to Shree Ram Cafe"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#DD2C00"
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/cafe"
+        android:id="@+id/cnum"
+        android:text="☎ Contect No. : +91 8200047900"
+        android:tooltipText="MR kapil Ahir"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cnum"
+        android:id="@+id/web"
+        android:text="🌐 View Website : Click Hear"
+        android:tooltipText="Click To Open Our Website"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginBottom="5dp"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/web"
+        android:id="@+id/manu"
+        android:text="Menu"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:background="#DD2C00"
+        >
+    </TextView>
+
+    <!-- manu start -->
+
+    <ImageView
+        android:id="@+id/burgerimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/manu"
+        android:layout_centerInParent="true"
+        android:src="@drawable/burger"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/burger"
+        android:layout_below="@+id/burgerimg"
+        android:text="Burger"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/mojitoimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/burger"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mojito"
+        android:layout_marginTop="20dp"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mojito"
+        android:layout_below="@+id/mojitoimg"
+        android:text="Mojito"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        >
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/pizzaimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/mojito"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pizza"
+        android:layout_marginTop="20dp"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pizza"
+        android:layout_below="@+id/pizzaimg"
+        android:text="Pizza"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        >
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/coffeeimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/pizza"
+        android:layout_centerInParent="true"
+        android:src="@drawable/coffee"
+        android:layout_marginTop="20dp"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coffe"
+        android:layout_below="@+id/coffeeimg"
+        android:text="Coffee"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coffe"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="My Items"
+        >
+
+    </Button>
+
+</RelativeLayout>
+</ScrollView>

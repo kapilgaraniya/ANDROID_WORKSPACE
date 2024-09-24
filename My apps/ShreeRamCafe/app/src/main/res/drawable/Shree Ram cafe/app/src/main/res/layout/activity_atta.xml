@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Atta">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/a"
+        android:text="What you eat decides your well-being. To live a healthy life, Go Organic with Amul Organic!
+At Amul, as consumer trust is our main currency, we test our Organic products twice for more than 200 pesticides
+before offering the products to our consumers. This ensures that Amul Organic never disappoints our consumer's expectations."
+        >
+    </TextView>
+
+</RelativeLayout>
