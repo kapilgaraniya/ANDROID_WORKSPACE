@@ -8,6 +8,9 @@ import android.widget.ListView
 import android.widget.Spinner
 import androidx.appcompat.widget.SearchView
 
+// Q 15 =>  Create custom toolbar as per given below design
+//          Create toolbar with spinner and search functionality 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var toolbar: Toolbar
