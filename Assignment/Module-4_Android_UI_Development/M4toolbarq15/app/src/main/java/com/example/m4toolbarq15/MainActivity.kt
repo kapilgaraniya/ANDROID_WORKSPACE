@@ -13,10 +13,10 @@ import androidx.appcompat.widget.SearchView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var toolbar: Toolbar
-    private lateinit var searchView: SearchView
-    private lateinit var spinner: Spinner
-    private lateinit var listView: ListView
+    lateinit var toolbar: Toolbar
+    lateinit var searchView: SearchView
+    lateinit var spinner: Spinner
+    lateinit var listView: ListView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,5 +53,6 @@ class MainActivity : AppCompatActivity() {
                 return false
             }
         })
+
     }
 }
