@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kool_drink">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/kooldrink"
+        android:text="Amul Kool is a refreshing beverage range with a variety of flavors. Pick up Rose for its unique flavor and enjoy the drink, Hamara cold drink. Toned Milk, Milk Solids And Sugar. It contains permitted synthetic food colors and added flavors."
+        >
+    </TextView>
+
+</RelativeLayout>

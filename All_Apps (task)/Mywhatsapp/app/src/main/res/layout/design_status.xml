@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgstatus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+        <TextView
+            android:id="@+id/txt1status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapil Garaniya"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/txt2status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:20 am"/>
+
+    </LinearLayout>
+
+</LinearLayout>

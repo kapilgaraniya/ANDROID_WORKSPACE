@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/i1"
+        android:title="About us" />
+    <item android:title="Visit Website" />
+    <item android:title="Email" />
+    <item android:title="Share App" />
+    <item android:title="Rate App" />
+</menu>

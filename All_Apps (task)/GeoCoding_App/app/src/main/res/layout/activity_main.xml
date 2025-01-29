@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Address Input -->
+    <EditText
+        android:id="@+id/addressInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/geocodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Coordinates" />
+
+    <TextView
+        android:id="@+id/coordinatesOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coordinates will appear here"
+        android:paddingTop="16dp" />
+
+    <!-- Latitude and Longitude Input -->
+    <EditText
+        android:id="@+id/latitudeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Latitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/longitudeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Longitude"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/reverseGeocodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Address" />
+
+    <TextView
+        android:id="@+id/addressOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address will appear here"
+        android:paddingTop="16dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

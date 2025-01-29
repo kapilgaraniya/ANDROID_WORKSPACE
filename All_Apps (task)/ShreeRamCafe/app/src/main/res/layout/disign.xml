@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shep"
+        android:layout_marginTop="40dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_margin="20dp"
+           >
+
+           <TextView
+               android:id="@+id/txt1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:textColor="@color/black"
+               android:layout_marginTop="30dp"
+               android:text="CONGRATULATIONS"
+               android:textSize="25dp"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/txt2"
+               android:layout_marginTop="30dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:textColor="@color/black"
+               android:text="You've just displayed this\n awesome Pop Up View"
+               android:textSize="20dp"
+               />
+
+           <Button
+               android:id="@+id/btndone"
+               android:layout_width="350dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="30dp"
+               android:backgroundTint="#43A047"
+               android:text="Done"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:layout_gravity="center"
+               />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/check"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
+

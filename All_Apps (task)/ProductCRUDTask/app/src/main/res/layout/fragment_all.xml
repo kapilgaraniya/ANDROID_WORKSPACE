@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BBDEFB"
+        android:queryHint="Search here" />
+
+            <GridView
+                android:id="@+id/glist"
+                android:layout_below="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/white"
+                android:stretchMode="columnWidth"
+                android:columnWidth="0dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="5dp"
+                android:padding="8dp" />
+
+</RelativeLayout>

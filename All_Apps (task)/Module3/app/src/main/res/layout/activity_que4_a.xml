@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Que4_a">
+
+<!--    Q4 : Pass data from one screen to second screen -->
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" * First Screen * "
+        android:textAlignment="center"
+        android:textColor="#F57F17"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+    />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="> Select itams "
+        android:layout_marginLeft="30dp"
+        android:textColor="#01579B"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:id="@+id/ch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="One"
+        />
+    <CheckBox
+        android:id="@+id/ch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        />
+    <CheckBox
+        android:id="@+id/ch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        />
+    <CheckBox
+        android:id="@+id/ch4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Four"
+        />
+    <CheckBox
+        android:id="@+id/ch5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Five"
+        />
+    <CheckBox
+        android:id="@+id/ch6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Six"
+        />
+    <CheckBox
+        android:id="@+id/ch7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seven"
+        />
+    <CheckBox
+        android:id="@+id/ch8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eight"
+        />
+    <CheckBox
+        android:id="@+id/ch9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nine"
+        />
+    <CheckBox
+        android:id="@+id/ch10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ten"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Done  "
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

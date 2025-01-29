@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1097385366400",
+    "firebase_url": "https://fir-ex-1-dcefa-default-rtdb.firebaseio.com",
+    "project_id": "fir-ex-1-dcefa",
+    "storage_bucket": "fir-ex-1-dcefa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097385366400:android:72f8eeb6e27f00ccc32765",
+        "android_client_info": {
+          "package_name": "com.example.firebase_ex_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD122e5Qt7qlk1Ix-CxsmQuBf4dvlj9RGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097385366400:android:b9665f6416c67c03c32765",
+        "android_client_info": {
+          "package_name": "com.example.firebase_otp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD122e5Qt7qlk1Ix-CxsmQuBf4dvlj9RGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

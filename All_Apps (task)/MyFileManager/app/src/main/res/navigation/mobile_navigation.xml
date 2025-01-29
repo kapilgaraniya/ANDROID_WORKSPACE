@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_music">
+
+    <fragment
+        android:id="@+id/navigation_music"
+        android:name="com.example.myfilemanager.MusicFragment"
+        android:label="@string/title_music"
+        tools:layout="@layout/fragment_music" />
+
+    <fragment
+        android:id="@+id/navigation_vidio"
+        android:name="com.example.myfilemanager.VideoFragment"
+        android:label="@string/title_vidio"
+        tools:layout="@layout/fragment_video" />
+
+    <fragment
+        android:id="@+id/navigation_image"
+        android:name="com.example.myfilemanager.ImageFragment"
+        android:label="@string/title_images"
+        tools:layout="@layout/fragment_image" />
+
+    <fragment
+        android:id="@+id/navigation_document"
+        android:name="com.example.myfilemanager.DocumentFragment"
+        android:label="@string/title_document"
+        tools:layout="@layout/fragment_document" />
+</navigation>
