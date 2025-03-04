@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#6B6969"
+        app:title="Student Form"
+        app:titleTextColor="@color/white"
+        android:layout_marginBottom="10dp">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Roll No."
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/rollno"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edt_background"
+                    android:inputType="number"
+                    android:paddingStart="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_background"
+                    android:inputType="text"
+                    android:paddingStart="5dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_background"
+                    android:inputType="text"
+                    android:paddingStart="5dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Gender"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textSize="17dp"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textSize="17dp"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="17dp"
+                        android:layout_weight="1"/>
+
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Your Image : "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <Button
+                        android:id="@+id/browsebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Browse"
+                        android:layout_marginEnd="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/selectedimg"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_launcher_foreground"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/clearbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cler All"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="20dp"/>
+
+                    <Button
+                        android:id="@+id/submitbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
