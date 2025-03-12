@@ -1,0 +1,23 @@
+Book My Doc - Project Summary
+
+Project Overview:
+"Book My Doc" is an online doctor appointment booking system that allows patients to find and book appointments with doctors easily. The project consists of two sides: Patient Side and Admin Side, with Firebase Realtime Database for data storage and MVVM architecture for efficient development.
+
+1. Patient Side (User Features)
+✅ User Authentication – Patients can register and log in.
+✅ View Doctor Details – Patients can see doctor profiles, ratings, and available time slots.
+✅ Book Appointments – Patients can select a date and time to book an appointment.
+✅ Cancel Appointment – Patients can cancel their booked appointments.
+✅ Appointment Reminders – Patients receive notifications as reminders.
+
+2. Admin Side (Admin Features)
+✅ Manage Doctors – Admin can add, update, and delete doctors.
+✅ Manage Patients – Admin can view and delete patient records.
+✅ Manage Appointments – Admin can view all booked appointments.
+
+Technologies Used
+Frontend: Kotlin, XML
+Backend: Firebase Realtime Database
+Architecture: MVVM
+UI Components: Material Design
+Authentication: Firebase Authentication
