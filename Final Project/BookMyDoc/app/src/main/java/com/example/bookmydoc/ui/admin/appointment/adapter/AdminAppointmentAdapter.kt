@@ -89,7 +89,7 @@ class AdminAppointmentAdapter(
         }
 
         val message =
-            "Dear ${appointment.patientName}, your appointment with Dr. ${appointment.doctorName} is confirmed on ${appointment.date} at ${appointment.timeSlot}. Please arrive on time. Thank you!"
+            "Dear ${appointment.patientName}, your appointment with ${appointment.doctorName} is confirmed on ${appointment.date} at ${appointment.timeSlot}. Please arrive on time. Thank you!"
 
         try {
             val smsManager = SmsManager.getDefault()
