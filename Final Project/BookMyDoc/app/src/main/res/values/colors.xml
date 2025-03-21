@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#6200EE</color> <!-- Purple (Change as needed) -->
+    <color name="background">#F5F5F5</color> <!-- Light Gray Background -->
+    <color name="teal_700">#2979FF</color>
+    <color name="green">#4CAF50</color>
+    <color name="innerColor">#FDFDFD</color>
+
+
+</resources>
