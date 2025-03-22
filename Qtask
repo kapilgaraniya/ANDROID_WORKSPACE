@@ -1,0 +1,181 @@
+1️⃣ Dependencies (build.gradle)
+
+Add the following dependencies in app/build.gradle:
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.9.0'
+}
+
+
+---
+
+2️⃣ MainActivity.kt (User Input)
+
+package com.example.splitbill
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val etBillAmount = findViewById<EditText>(R.id.etBillAmount)
+        val etTipPercentage = findViewById<EditText>(R.id.etTipPercentage)
+        val etPeopleCount = findViewById<EditText>(R.id.etPeopleCount)
+        val btnCalculate = findViewById<Button>(R.id.btnCalculate)
+        val spinnerCurrency = findViewById<Spinner>(R.id.spinnerCurrency)
+
+        // Currency Spinner Options
+        val currencies = arrayOf("INR", "USD", "EUR")
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, currencies)
+        spinnerCurrency.adapter = adapter
+
+        btnCalculate.setOnClickListener {
+            val billAmount = etBillAmount.text.toString().toDoubleOrNull() ?: 0.0
+            val tipPercentage = etTipPercentage.text.toString().toDoubleOrNull() ?: 0.0
+            val peopleCount = etPeopleCount.text.toString().toIntOrNull() ?: 1
+            val selectedCurrency = spinnerCurrency.selectedItem.toString()
+
+            if (billAmount > 0 && tipPercentage >= 0 && peopleCount > 0) {
+                val intent = Intent(this, ResultActivity::class.java).apply {
+                    putExtra("billAmount", billAmount)
+                    putExtra("tipPercentage", tipPercentage)
+                    putExtra("peopleCount", peopleCount)
+                    putExtra("currency", selectedCurrency)
+                }
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Please enter valid values!", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+}
+
+
+---
+
+3️⃣ ResultActivity.kt (Calculation & Display)
+
+package com.example.splitbill
+
+import android.os.Bundle
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import kotlin.math.roundToInt
+
+class ResultActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_result)
+
+        val billAmount = intent.getDoubleExtra("billAmount", 0.0)
+        val tipPercentage = intent.getDoubleExtra("tipPercentage", 0.0)
+        val peopleCount = intent.getIntExtra("peopleCount", 1)
+        val currency = intent.getStringExtra("currency") ?: "INR"
+
+        val tipAmount = (billAmount * tipPercentage) / 100
+        val totalBill = billAmount + tipAmount
+        val amountPerPerson = totalBill / peopleCount
+        val roundOffAmount = amountPerPerson.roundToInt().toDouble()
+
+        findViewById<TextView>(R.id.tvTipAmount).text = "$currency $tipAmount"
+        findViewById<TextView>(R.id.tvTotalBill).text = "$currency $totalBill"
+        findViewById<TextView>(R.id.tvAmountPerPerson).text = "$currency $amountPerPerson"
+        findViewById<TextView>(R.id.tvRoundOff).text = "$currency $roundOffAmount"
+    }
+}
+
+
+---
+
+4️⃣ activity_main.xml (User Input UI)
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bill Amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etTipPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Tip %"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etPeopleCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number of People"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinnerCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+</LinearLayout>
+
+
+---
+
+5️⃣ activity_result.xml (Result UI)
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView android:text="Tip Amount:" />
+    <TextView android:id="@+id/tvTipAmount" />
+
+    <TextView android:text="Total Bill Including Tip:" />
+    <TextView android:id="@+id/tvTotalBill" />
+
+    <TextView android:text="Amount Per Person:" />
+    <TextView android:id="@+id/tvAmountPerPerson" />
+
+    <TextView android:text="Round Off Amount:" />
+    <TextView android:id="@+id/tvRoundOff" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:onClick="finish" />
+</LinearLayout>
+
+
+---
+
+6️⃣ AndroidManifest.xml
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.splitbill">
+
+    <application>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ResultActivity" />
+    </application>
+</manifest>
